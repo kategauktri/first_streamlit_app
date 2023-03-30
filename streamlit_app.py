@@ -49,7 +49,7 @@ except URLError as e:
 # take the json version of the response and normalise it 
 # output it in the screen as a table 
 
-streamlit.stop()
+
 
 #import snowflake.connector
 
@@ -63,3 +63,4 @@ if steamlit.button('Get Fruit Load List'):
     my_data_rows = get_fruit_load_list()
     streamlit.dataframe(my_data_rows)
 
+streamlit.stop()
